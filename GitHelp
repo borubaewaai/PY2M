@@ -1,0 +1,11 @@
+git config --global user.name "Aizhannat"
+git config --global user.email "aborubaeva@na.edu"
+
+только для одного проекта
+
+git init
+git remote add origin https://github.com/borubaewaai/PY2M
+
+
+  основные команды
+  git status - состояние
