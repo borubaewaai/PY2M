@@ -8,3 +8,4 @@ git remote add origin https://github.com/borubaewaai/PY2M
 
   основные команды
   git status - состояние
+  git switch, перемеаться по файлам
