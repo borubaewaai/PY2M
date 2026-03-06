@@ -6,6 +6,5 @@ git config --global user.email "aborubaeva@na.edu"
 git init
 git remote add origin https://github.com/borubaewaai/PY2M
 
-
   основные команды
   git status - состояние
