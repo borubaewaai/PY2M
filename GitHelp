@@ -9,3 +9,24 @@ git remote add origin https://github.com/borubaewaai/PY2M
   основные команды
   git status - состояние
   git switch, перемеаться по файлам
+
+  git status
+  git add .
+  git commit -m "added: lesson1"
+  git push origin main and master
+
+  git branch
+
+ production
+
+ stage|test
+
+ develop
+
+feat/register
+feat/create_order
+feat/filter_news
+
+"feat: added register code in file name.py"
+"fix: fixed register in line 123"
+"update: register added email logic"
