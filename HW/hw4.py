@@ -1,4 +1,5 @@
-rates = { "KGS": 1, "USD": 89, "EUR": 96, "RUB": 1.2 }
+rates = {"KGS": 1, "USD": 89, "EUR": 96, "RUB": 1.2}
+
 class Money:
     def __init__(self, amount, currency):
         self.amount = amount
@@ -8,10 +9,14 @@ class Money:
         return self.amount * rates[self.currency]
 
     def __add__(self, other):
+        if self.currency == other.currency:
+            return Money(self.amount + other.amount, self.currency)
         total_kgs = self.convert_to_kgs() + other.convert_to_kgs()
         return Money(total_kgs, "KGS")
 
     def __sub__(self, other):
+        if self.currency == other.currency:
+            return Money(self.amount - other.amount, self.currency)
         total_kgs = self.convert_to_kgs() - other.convert_to_kgs()
         return Money(total_kgs, "KGS")
 
@@ -24,9 +29,9 @@ class Money:
     def __str__(self):
         return f"{self.amount} {self.currency}"
 
+
 money1 = Money(100, "USD")
 money2 = Money(5000, "KGS")
 
 result = money1 + money2
-
 print(result)
